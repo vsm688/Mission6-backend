@@ -13,3 +13,5 @@ const AgentSchema = new mongoose.Schema(
     }
 
 )
+
+module.exports = mongoose.model("Agent",AgentSchema,"Agents");
