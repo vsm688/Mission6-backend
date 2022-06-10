@@ -1,1 +1,156 @@
-GET http://localhost:5000/properties
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Outdoor Wonderland",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Mount Albert",
+    "Bedrooms" : 2,
+    "Bathrooms" : 1,
+    "Garages": 1,
+    "PropertyType" : "rent",
+    "PetsAllowed" : true,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/1.png"],
+    "RentPrice" : 550,
+    "SalePrice" : 0,
+    "StreetAddress" : "832 Mount Albert Road, Mt Albert"
+}
+
+###
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Sailing Sunsets",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Devonport",
+    "Bedrooms" : 6,
+    "Bathrooms" : 3,
+    "Garages": 2,
+    "PropertyType" : "rent",
+    "PetsAllowed" : false,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/2.png"],
+    "RentPrice" : 850,
+    "SalePrice" : 0,
+    "StreetAddress" : "36 Bay Road, Port Harbor"
+}
+
+###
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Mystery Room",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Epsom",
+    "Bedrooms" : 4,
+    "Bathrooms" : 2,
+    "Garages": 3,
+    "PropertyType" : "rent",
+    "PetsAllowed" : true,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/3.png"],
+    "RentPrice" : 1150,
+    "SalePrice" : 0,
+    "StreetAddress" : "7 Epsom Ave, Epsom"
+}
+
+###
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Your New Build Awaits",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Devonport",
+    "Bedrooms" : 3,
+    "Bathrooms" : 1,
+    "Garages": 1,
+    "PropertyType" : "rent",
+    "PetsAllowed" : true,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/4.png"],
+    "RentPrice" : 750,
+    "SalePrice" : 0,
+    "StreetAddress" : "224 Devonport Road, Devonport"
+}
+
+###
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Your Dream Space",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Mt Roskill",
+    "Bedrooms" : 3,
+    "Bathrooms" : 2,
+    "Garages": 1,
+    "PropertyType" : "rent",
+    "PetsAllowed" : false,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/5.png"],
+    "RentPrice" : 550,
+    "SalePrice" : 0,
+    "StreetAddress" : "92 Carr Road, Mt Roskill South"
+}
+
+###
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "The Eagles Nest",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Onehunga",
+    "Bedrooms" : 1,
+    "Bathrooms" : 1,
+    "Garages": 1,
+    "PropertyType" : "rent",
+    "PetsAllowed" : true,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/6.png"],
+    "RentPrice" : 500,
+    "SalePrice" : 0,
+    "StreetAddress" : "904 Onehunga Mall Road, Onehunga"
+}
+
+###
+
+POST http://localhost:5000/properties
+Content-Type: application/json
+
+{
+    "Title": "Beyond Horizons",
+    "District" : "Auckland City",
+    "Description" : "Cool Property",
+    "Suburb" : "Port Harbor",
+    "Bedrooms" : 2,
+    "Bathrooms" : 1,
+    "Garages": 1,
+    "PropertyType" : "rent",
+    "PetsAllowed" : false,
+    "AvailableNow" : true,
+    "ImageCollection" : ["./images/properties/7.PNG"],
+    "RentPrice" : 500,
+    "SalePrice" : 0,
+    "StreetAddress" : "54 Port Harbor Street, Rocky Bay"
+}
+
+
+
+
+
+###
+# ONLY RUN THE BELOW REQUEST TO DROP THE PROPERTIES COLLECTION DO NOT
+# RUN THIS IF YOU INTEND ON HAVING DATA SHOWN ON THE WEBSITE!!!!!!!!!!!!!!
+###
+DELETE http://localhost:5000/properties

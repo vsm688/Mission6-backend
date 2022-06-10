@@ -4,13 +4,12 @@ const app = express();
 const port = 5000;
 const mongoose = require("mongoose");
 const callQuickSort = require("./algorithms/quicksort");
+const dotenv = require("dotenv").config();
 app.use(cors())
 app.use(express.json())
-const connectionString = "mongodb://mongo:27017/property"
 
-// above connection string for local database ^^^ 
-// mongodb://localhost:27017
-// const connectionString = "mongodb://localhost:27017/property"
+
+const connectionString = process.env.CONNECTION_STRING
 const Property = require("./schema/Property");
 const Agent = require("./schema/Agent");
 mongoose.connect(connectionString, {useNewUrlParser: true}).then(() => console.log("mongodb connected."))
